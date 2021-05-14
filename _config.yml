@@ -3,13 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: YueXiangmiao
+subtitle: 确保每天都在进步
+description: 前端学习笔记
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Yue@53795936@qq.com
+language: zh-CN
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -103,5 +102,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/pangpangfei/pangpangfei.github.io.git
+  repo: git@github.com:pangpangfei/pangpangfei.github.io.git
   branch: master
