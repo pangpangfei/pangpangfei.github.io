@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: YueXiangmiao
+title: Xiangmiao Yue
 subtitle: 确保每天都在进步
 description: 前端学习笔记
-keywords:
-author: Yue@53795936@qq.com
+keywords: "HTML, CSS, JavaScript, 数据结构, 算法, 计算机网络, 操作系统, 设计模式"
+author: Yue/53795936@qq.com
 language: zh-CN
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://pangpangfei.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +96,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -104,3 +105,9 @@ deploy:
   type: git
   repo: git@github.com:pangpangfei/pangpangfei.github.io.git
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
