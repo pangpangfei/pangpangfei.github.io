@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xiangmiao Yue</title>
+  
+  <subtitle>确保每天都在进步</subtitle>
+  <link href="https://pangpangfei.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://pangpangfei.github.io/"/>
+  <updated>2021-05-15T04:05:40.930Z</updated>
+  <id>https://pangpangfei.github.io/</id>
+  
+  <author>
+    <name>Yue/53795936@qq.com</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>截止2021年5月的HTML总结</title>
+    <link href="https://pangpangfei.github.io/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/"/>
+    <id>https://pangpangfei.github.io/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/</id>
+    <published>2021-05-15T03:39:38.000Z</published>
+    <updated>2021-05-15T04:05:40.930Z</updated>
+    
+    <content type="html"><![CDATA[<p>截止到2021年5月的html的知识脑图，包含了所有标签属性和草案语法，废弃的语法不再记录，其中标签的分类按照我自己的记忆习惯分的。<br>图拍为svg图片，可以在浏览器新标签页打开图片确保能看清图片。</p><span id="more"></span><p><img src="/images/htmlzongjie.svg" alt="html脑图"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;截止到2021年5月的html的知识脑图，包含了所有标签属性和草案语法，废弃的语法不再记录，其中标签的分类按照我自己的记忆习惯分的。&lt;br&gt;图拍为svg图片，可以在浏览器新标签页打开图片确保能看清图片。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="HTML" scheme="https://pangpangfei.github.io/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://pangpangfei.github.io/tags/HTML/"/>
+    
+    <category term="DOCTYPE" scheme="https://pangpangfei.github.io/tags/DOCTYPE/"/>
+    
+  </entry>
+  
+</feed>
