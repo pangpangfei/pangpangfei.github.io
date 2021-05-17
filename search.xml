@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JavaScript实现Constructor（构造器）模式</title>
+    <url>/2021/05/17/JavaScript%E5%AE%9E%E7%8E%B0Constructor%EF%BC%88%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%89%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>在经典面向队形编程语言中，Constructor是一种在内存已分配给该对象的情况下，用于初始化新建对象的特殊方法。在JavaScript中，几乎所有的东西都是对象，我们通常最感兴趣的是object构造器。</p>
+<ul>
+<li>《JavaScript设计模式》</li>
+</ul>
+</blockquote>
+<span id="more"></span>
+<h2 id="大白话讲什么是构造器模式"><a href="#大白话讲什么是构造器模式" class="headerlink" title="大白话讲什么是构造器模式"></a>大白话讲什么是构造器模式</h2><p>不论是在JavaScript，Java或是C#，亦或是其他面向对象语言中，都有个new操作符，当你new一个对象的时候，你就已经玩过了构造器模式。其作用就是创建一个给对象分配一块内存空间，并且创建该对象的属性和方法。</p>
+<h2 id="JavaScript怎么使用构造器"><a href="#JavaScript怎么使用构造器" class="headerlink" title="JavaScript怎么使用构造器"></a>JavaScript怎么使用构造器</h2><h3 id="ES6之前"><a href="#ES6之前" class="headerlink" title="ES6之前"></a>ES6之前</h3><p>ES6之前的JavaScript不支持类的概念，但是可以通过new关键字将特殊的构造器函数实例化成一个对象。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age, gender</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.name = name;</span><br><span class="line">    <span class="built_in">this</span>.age = age;</span><br><span class="line">    <span class="built_in">this</span>.gender = gender;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person.prototype.greeting = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;你好！我叫&#x27;</span> + <span class="built_in">this</span>.name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> lxw = <span class="keyword">new</span> Person(<span class="string">&quot;刘希玮&quot;</span>, <span class="number">24</span>, <span class="number">0</span>);</span><br><span class="line"><span class="keyword">var</span> yxm = <span class="keyword">new</span> Person(<span class="string">&quot;岳向淼&quot;</span>, <span class="number">25</span>, <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(lxw.greeting());</span><br><span class="line"><span class="built_in">console</span>.log(yxm.greeting());</span><br></pre></td></tr></table></figure>
+<h3 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h3><p>ES6 支持了类的定义。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="title">constructor</span>(<span class="params">name, age, gender</span>)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">        <span class="built_in">this</span>.gender = gender;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="title">greeting</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">`你好！我叫<span class="subst">$&#123;<span class="built_in">this</span>.name&#125;</span>`</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> lxw = <span class="keyword">new</span> Person(<span class="string">&quot;刘希玮&quot;</span>, <span class="number">24</span>, <span class="number">0</span>);</span><br><span class="line"><span class="keyword">var</span> yxm = <span class="keyword">new</span> Person(<span class="string">&quot;岳向淼&quot;</span>, <span class="number">25</span>, <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(lxw.greeting());</span><br><span class="line"><span class="built_in">console</span>.log(yxm.greeting());</span><br></pre></td></tr></table></figure>
+<h2 id="为什么要用构造器"><a href="#为什么要用构造器" class="headerlink" title="为什么要用构造器"></a>为什么要用构造器</h2><p>为啥？面向对象就完事了！</p>
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>设计模式</tag>
+        <tag>构造器模式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>截止2021年5月的HTML总结</title>
     <url>/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>截止到2021年5月的html的知识脑图。包含了所有标签属性和草案语法，废弃的语法不再记录。其中标签的分类按照我自己的记忆习惯分的。</p>
