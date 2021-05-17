@@ -4,7 +4,7 @@
     <title>JavaScript实现Constructor（构造器）模式</title>
     <url>/2021/05/17/JavaScript%E5%AE%9E%E7%8E%B0Constructor%EF%BC%88%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%89%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<blockquote>
-<p>在经典面向队形编程语言中，Constructor是一种在内存已分配给该对象的情况下，用于初始化新建对象的特殊方法。在JavaScript中，几乎所有的东西都是对象，我们通常最感兴趣的是object构造器。</p>
+<p>在经典面向对象编程语言中，Constructor是一种在内存已分配给该对象的情况下，用于初始化新建对象的特殊方法。在JavaScript中，几乎所有的东西都是对象，我们通常最感兴趣的是object构造器。</p>
 <ul>
 <li>《JavaScript设计模式》</li>
 </ul>
