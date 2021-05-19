@@ -41,4 +41,29 @@
         <tag>DOCTYPE</tag>
       </tags>
   </entry>
+  <entry>
+    <title>数组</title>
+    <url>/2021/05/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<p>想写一篇数组的文章作为数据结构的开始。</p>
+<span id="more"></span>
+
+<h2 id="数据结构中的数组"><a href="#数据结构中的数组" class="headerlink" title="数据结构中的数组"></a>数据结构中的数组</h2><p>数组是有限个相同类型的变量所组成的有序集合。</p>
+<h3 id="数组的操作"><a href="#数组的操作" class="headerlink" title="数组的操作"></a>数组的操作</h3><h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>创建数组时，先指定数组的容量大小，然后根据大小分配内存，数组在内存中<strong>顺序存储</strong>。</p>
+<h4 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h4><p>数组中的每一个元素都有一个下标，下标从0开始，如果下标超过数组的末尾的下标，就会发生数组越界。算法复杂度为O(1)。</p>
+<h5 id="数组的下标为什么从0开始"><a href="#数组的下标为什么从0开始" class="headerlink" title="数组的下标为什么从0开始"></a>数组的下标为什么从0开始</h5><p>从数组中存储的数据模型来看，下标最精确的意思是<strong>偏移量</strong>，a[0]的偏移量是0，即为首地址。a[i]的偏移量是i，寻址公式就是<br><code>a[i]_address = base_address + i*data_type_size</code><br>如果下标从1开始，那对应的寻址公式<br><code>a[i]_address = base_address + （i-1）*data_type_size</code><br>对CPU来说，每次随机访问，就多了一次运算，多发一条指令。</p>
+<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><p>利用下标赋值，算法复杂度为O(1)。</p>
+<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><p>算法复杂度为O(n),插入操作会把插入点后面的元素都向后移动一位。</p>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><p>算法复杂度为O(n),删除操作会把删除点后面的元素都向前移动一位。</p>
+<h3 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h3><p>因为数组在创建的时候会预先分配内存，在数组没有填满的时候，数组的空间效率很低，为了解决这个问题，人们发明了动态数组。<br>所谓的动态数组就是为了<strong>避免内存浪费</strong>，先预先为数组开辟较小的内存空间，当添加的数组超过数组的长度的时候，再创建一个新的数组，新数组的长度是老数组的n（一般为2）倍，把老数组的数组复制到新数组中，然后释放掉老数组的内存。<br>这样就能保证内存的合理运用，但是每次扩容都会有大量的额外操作，会降低时间性能。</p>
+<h2 id="V8引擎中的JavaScript数组"><a href="#V8引擎中的JavaScript数组" class="headerlink" title="V8引擎中的JavaScript数组"></a>V8引擎中的JavaScript数组</h2><p>V8中的js数组在不同的条件下会使用不同的模式：<strong>Fast Elements</strong>，<strong>Dictionary Elements</strong>和<strong>Dictionary Element</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>数组</tag>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
 </search>
