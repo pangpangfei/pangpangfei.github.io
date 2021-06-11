@@ -20,22 +20,22 @@
     var CONFIG = {"hostname":"pangpangfei.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="想写一篇数组的文章作为数据结构的开始。">
+  <meta name="description" content="我前司的后端老大哥，看见一个面试者就让人先手写个单例。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组">
-<meta property="og:url" content="https://pangpangfei.github.io/2021/05/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84/index.html">
+<meta property="og:title" content="JavaScript实现单例模式">
+<meta property="og:url" content="https://pangpangfei.github.io/2021/06/11/JavaScript%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Xiangmiao Yue">
-<meta property="og:description" content="想写一篇数组的文章作为数据结构的开始。">
+<meta property="og:description" content="我前司的后端老大哥，看见一个面试者就让人先手写个单例。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-05-19T11:57:36.000Z">
-<meta property="article:modified_time" content="2021-05-19T13:29:16.645Z">
+<meta property="article:published_time" content="2021-06-11T13:29:06.000Z">
+<meta property="article:modified_time" content="2021-06-11T15:17:50.528Z">
 <meta property="article:author" content="Yue&#x2F;53795936@qq.com">
-<meta property="article:tag" content="数组">
-<meta property="article:tag" content="数据结构">
-<meta property="article:tag" content="算法">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="设计模式">
+<meta property="article:tag" content="单例模式">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://pangpangfei.github.io/2021/05/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84/">
+<link rel="canonical" href="https://pangpangfei.github.io/2021/06/11/JavaScript%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>数组 | Xiangmiao Yue</title>
+  <title>JavaScript实现单例模式 | Xiangmiao Yue</title>
   
 
 
@@ -194,7 +194,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://pangpangfei.github.io/2021/05/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84/">
+    <link itemprop="mainEntityOfPage" href="https://pangpangfei.github.io/2021/06/11/JavaScript%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -207,7 +207,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          数组
+          JavaScript实现单例模式
         </h1>
 
         <div class="post-meta">
@@ -218,7 +218,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-19 19:57:36 / 修改时间：21:29:16" itemprop="dateCreated datePublished" datetime="2021-05-19T19:57:36+08:00">2021-05-19</time>
+              <time title="创建时间：2021-06-11 21:29:06 / 修改时间：23:17:50" itemprop="dateCreated datePublished" datetime="2021-06-11T21:29:06+08:00">2021-06-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -226,7 +226,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a>
+                  <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a>
                 </span>
             </span>
 
@@ -241,18 +241,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>想写一篇数组的文章作为数据结构的开始。</p>
+        <p>我前司的后端老大哥，看见一个面试者就让人先手写个单例。</p>
 <span id="more"></span>
-
-<h2 id="数据结构中的数组"><a href="#数据结构中的数组" class="headerlink" title="数据结构中的数组"></a>数据结构中的数组</h2><p>数组是有限个相同类型的变量所组成的有序集合。</p>
-<h3 id="数组的操作"><a href="#数组的操作" class="headerlink" title="数组的操作"></a>数组的操作</h3><h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>创建数组时，先指定数组的容量大小，然后根据大小分配内存，数组在内存中<strong>顺序存储</strong>。</p>
-<h4 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h4><p>数组中的每一个元素都有一个下标，下标从0开始，如果下标超过数组的末尾的下标，就会发生数组越界。算法复杂度为O(1)。</p>
-<h5 id="数组的下标为什么从0开始"><a href="#数组的下标为什么从0开始" class="headerlink" title="数组的下标为什么从0开始"></a>数组的下标为什么从0开始</h5><p>从数组中存储的数据模型来看，下标最精确的意思是<strong>偏移量</strong>，a[0]的偏移量是0，即为首地址。a[i]的偏移量是i，寻址公式就是<br><code>a[i]_address = base_address + i*data_type_size</code><br>如果下标从1开始，那对应的寻址公式<br><code>a[i]_address = base_address + （i-1）*data_type_size</code><br>对CPU来说，每次随机访问，就多了一次运算，多发一条指令。</p>
-<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><p>利用下标赋值，算法复杂度为O(1)。</p>
-<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><p>算法复杂度为O(n),插入操作会把插入点后面的元素都向后移动一位。</p>
-<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><p>算法复杂度为O(n),删除操作会把删除点后面的元素都向前移动一位。</p>
-<h3 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h3><p>因为数组在创建的时候会预先分配内存，在数组没有填满的时候，数组的空间效率很低，为了解决这个问题，人们发明了动态数组。<br>所谓的动态数组就是为了<strong>避免内存浪费</strong>，先预先为数组开辟较小的内存空间，当添加的数组超过数组的长度的时候，再创建一个新的数组，新数组的长度是老数组的n（一般为2）倍，把老数组的数组复制到新数组中，然后释放掉老数组的内存。<br>这样就能保证内存的合理运用，但是每次扩容都会有大量的额外操作，会降低时间性能。</p>
-<h2 id="V8引擎中的JavaScript数组"><a href="#V8引擎中的JavaScript数组" class="headerlink" title="V8引擎中的JavaScript数组"></a>V8引擎中的JavaScript数组</h2><p>V8中的js数组在不同的条件下会使用不同的模式：<strong>Fast Elements</strong>，<strong>Dictionary Elements</strong>和<strong>Dictionary Element</strong></p>
+<h2 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h2><p>简单的点讲就是一个类仅提供一个实例，该供全局使用。</p>
+<h2 id="单例解决的问题"><a href="#单例解决的问题" class="headerlink" title="单例解决的问题"></a>单例解决的问题</h2><p>一个全局使用的类频繁地创建与销毁。</p>
+<h2 id="JavaScript实现单例"><a href="#JavaScript实现单例" class="headerlink" title="JavaScript实现单例"></a>JavaScript实现单例</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="title">getInstance</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (!<span class="built_in">this</span>.instance) &#123;</span><br><span class="line">            <span class="built_in">this</span>.instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(Singleton.getInstance() === Singleton.getInstance()); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p>在上面的代码可以看出，区别于正常的类创建实例，单例模式实例的创建是在类的内部实现的，而且构造函数是不提供给外部使用的。</p>
+<h2 id="延时构建"><a href="#延时构建" class="headerlink" title="延时构建"></a>延时构建</h2><p>研究单例到这里，你会不会有这样的想法，为什么不直接用一个*对象(Object)*来表示单例呢，这样用起来不是简单又大方？<br>这就引出了单例的一个重要的特征就是延时构建。<br>当我们用对象来实现一个单例的时候，在它初始化的时候就会被添加到上下文环境，而<strong>占用内存资源</strong>，而通过单例生成的对象知道使用静态类的时候才会使用资源。</p>
+<h2 id="其他语言中的单例"><a href="#其他语言中的单例" class="headerlink" title="其他语言中的单例"></a>其他语言中的单例</h2><p>为什么要提其他语言中的单例呢，因为JavaScript区别于其他大多数语言的地方是JavaScript是<strong>单线程</strong>的。<br>多线程中资源是不共享的，所以在多线程的语言中，往往可以通过加<strong>锁</strong>实现单例。</p>
+<h2 id="通过静态变量构建"><a href="#通过静态变量构建" class="headerlink" title="通过静态变量构建"></a>通过静态变量构建</h2><p>静态变量在线程之间是共享的，所以其他语言也可以通过静态变量实现单例。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> instance = <span class="keyword">new</span> Singleton();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="title">getInstance</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(Singleton.getInstance() === Singleton.getInstance()); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p>但是这段代码又没有实现<strong>构建延迟</strong>，所以我们通过下面的方法实现一下构建延迟，JavaScript中的class没有私有类的概念，所以下面的代码为伪代码，仅作为理解其他语言的参考。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="title">getInstance</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> Nested.instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Nested</span> </span>&#123;</span><br><span class="line">        <span class="keyword">static</span> instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>可是你在工作中经常单例吗。</p>
 
     </div>
 
@@ -262,9 +263,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%95%B0%E7%BB%84/" rel="tag"># 数组</a>
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
-              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+              <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag"># 设计模式</a>
+              <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="tag"># 单例模式</a>
           </div>
 
         
@@ -273,13 +274,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/05/17/JavaScript%E5%AE%9E%E7%8E%B0Constructor%EF%BC%88%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%89%E6%A8%A1%E5%BC%8F/" rel="prev" title="JavaScript实现Constructor（构造器）模式">
-      <i class="fa fa-chevron-left"></i> JavaScript实现Constructor（构造器）模式
+    <a href="/2021/05/30/JavaScript%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/" rel="prev" title="JavaScript实现链表">
+      <i class="fa fa-chevron-left"></i> JavaScript实现链表
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/05/30/JavaScript%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/" rel="next" title="JavaScript实现链表">
-      JavaScript实现链表 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -338,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84"><span class="nav-number">1.</span> <span class="nav-text">数据结构中的数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">1.1.</span> <span class="nav-text">数组的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA"><span class="nav-number">1.1.1.</span> <span class="nav-text">创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96"><span class="nav-number">1.1.2.</span> <span class="nav-text">读取</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%8B%E6%A0%87%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%8E0%E5%BC%80%E5%A7%8B"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">数组的下标为什么从0开始</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">1.1.3.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5"><span class="nav-number">1.1.4.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4"><span class="nav-number">1.1.5.</span> <span class="nav-text">删除</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84"><span class="nav-number">1.2.</span> <span class="nav-text">动态数组</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#V8%E5%BC%95%E6%93%8E%E4%B8%AD%E7%9A%84JavaScript%E6%95%B0%E7%BB%84"><span class="nav-number">2.</span> <span class="nav-text">V8引擎中的JavaScript数组</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B"><span class="nav-number">1.</span> <span class="nav-text">单例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">单例解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">JavaScript实现单例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%B6%E6%97%B6%E6%9E%84%E5%BB%BA"><span class="nav-number">4.</span> <span class="nav-text">延时构建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8B"><span class="nav-number">5.</span> <span class="nav-text">其他语言中的单例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E6%9E%84%E5%BB%BA"><span class="nav-number">6.</span> <span class="nav-text">通过静态变量构建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">7.</span> <span class="nav-text">结语</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
