@@ -31,7 +31,7 @@
     <url>/2021/06/11/JavaScript%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p>我前司的后端老大哥，看见一个面试者就让人先手写个单例。</p>
 <span id="more"></span>
-<h2 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h2><p>简单的点讲就是一个类仅提供一个实例，该供全局使用。</p>
+<h2 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h2><p>简单点儿讲就是一个类仅提供一个实例，该供全局使用。</p>
 <h2 id="单例解决的问题"><a href="#单例解决的问题" class="headerlink" title="单例解决的问题"></a>单例解决的问题</h2><p>一个全局使用的类频繁地创建与销毁。</p>
 <h2 id="JavaScript实现单例"><a href="#JavaScript实现单例" class="headerlink" title="JavaScript实现单例"></a>JavaScript实现单例</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="title">getInstance</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (!<span class="built_in">this</span>.instance) &#123;</span><br><span class="line">            <span class="built_in">this</span>.instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(Singleton.getInstance() === Singleton.getInstance()); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
 <p>在上面的代码可以看出，区别于正常的类创建实例，单例模式实例的创建是在类的内部实现的，而且构造函数是不提供给外部使用的。</p>
