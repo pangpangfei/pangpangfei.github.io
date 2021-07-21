@@ -87,6 +87,21 @@
       </tags>
   </entry>
   <entry>
+    <title>截止2021年5月的HTML总结</title>
+    <url>/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>截止到2021年5月的html的知识脑图。包含了所有标签属性和草案语法，废弃的语法不再记录。其中标签的分类按照我自己的记忆习惯分的。</p>
+<span id="more"></span>
+<p><em>图片为svg格式，可以在浏览器新标签页打开图片确保能看清图片。</em><br><img src="/images/htmlzongjie.svg" alt="html脑图"></p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>DOCTYPE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript格式化时间的工具函数</title>
     <url>/2021/06/23/JavaScript%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4%E7%9A%84%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>每次新建项目都得去百度偷一个处理时间的函数，不如下次从自己博客里偷。</p>
@@ -168,21 +183,6 @@
       </tags>
   </entry>
   <entry>
-    <title>截止2021年5月的HTML总结</title>
-    <url>/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>截止到2021年5月的html的知识脑图。包含了所有标签属性和草案语法，废弃的语法不再记录。其中标签的分类按照我自己的记忆习惯分的。</p>
-<span id="more"></span>
-<p><em>图片为svg格式，可以在浏览器新标签页打开图片确保能看清图片。</em><br><img src="/images/htmlzongjie.svg" alt="html脑图"></p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>DOCTYPE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数组</title>
     <url>/2021/05/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<p>想写一篇数组的文章作为数据结构的开始。</p>
@@ -261,7 +261,7 @@
 <li>很多文字相关的内容并没有单独的拿出来，而是偶合到了JavaScript中。</li>
 </ol>
 <h2 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h2><h3 id="架构相关"><a href="#架构相关" class="headerlink" title="架构相关"></a>架构相关</h3><h4 id="架构图"><a href="#架构图" class="headerlink" title="架构图"></a>架构图</h4><p><img src="/images/jiagoutu1.png" alt="架构图"><br>说明：其中逻辑层表示JavaScript代码的模块，表现层表示CSS代码模块。</p>
-<h4 id="逻辑各模块职能"><a href="#逻辑各模块职能" class="headerlink" title="逻辑各模块职能"></a>逻辑各模块职能</h4><ul>
+<h4 id="逻辑层各模块职能"><a href="#逻辑层各模块职能" class="headerlink" title="逻辑层各模块职能"></a>逻辑层各模块职能</h4><ul>
 <li>UI组件：将页面中通用的UI抽象出来，比如弹窗，这里其实抽象出至少10个组件的，但是由于开发工期比较短，所以就抽象了两个：<ul>
 <li>Modal(/js/index.js): 对话框；</li>
 <li>Toast(/js/index.js): 提示框。</li>
