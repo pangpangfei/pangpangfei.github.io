@@ -260,7 +260,7 @@
 <li>没有限制业务数据的数据流，比如我们都知道React的数据流是自顶向下的，只能在顶层去操作数据，这是个很好的设计，但是在这个项目中却没有体现，导致我在发现一个bug的时候，去排查bug都很蒙圈；</li>
 <li>很多文字相关的内容并没有单独的拿出来，而是偶合到了JavaScript中。</li>
 </ol>
-<h2 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h2><h3 id="架构相关"><a href="#架构相关" class="headerlink" title="架构相关"></a>架构相关</h3><h4 id="架构图"><a href="#架构图" class="headerlink" title="架构图"></a>架构图</h4><p><img src="/images/jiagoutu1.png" alt="架构图"><br>说明：其中逻辑层表示JavaScript代码的模块，表现层说明CSS代码模块。</p>
+<h2 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h2><h3 id="架构相关"><a href="#架构相关" class="headerlink" title="架构相关"></a>架构相关</h3><h4 id="架构图"><a href="#架构图" class="headerlink" title="架构图"></a>架构图</h4><p><img src="/images/jiagoutu1.png" alt="架构图"><br>说明：其中逻辑层表示JavaScript代码的模块，表现层表示CSS代码模块。</p>
 <h4 id="逻辑各模块职能"><a href="#逻辑各模块职能" class="headerlink" title="逻辑各模块职能"></a>逻辑各模块职能</h4><ul>
 <li>UI组件：将页面中通用的UI抽象出来，比如弹窗，这里其实抽象出至少10个组件的，但是由于开发工期比较短，所以就抽象了两个：<ul>
 <li>Modal(/js/index.js): 对话框；</li>
@@ -297,7 +297,7 @@
 <li>所有的类属性的初始化都要在一起实现，不能随便在方法里出现未初始化的属性；</li>
 <li>不要在类外部直接访问类属性，而是通过getter setter方法去操作。</li>
 </ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>先说说成长吧，自打学前端以来，很少写纯原生JavaScript的项目，没有设计过这样的程序，所以在实现的过程中发现了很多可以精进的地方，在上面有提到过。还有很短的时间（4天）完成一个项目，中间还连续写了将近40个小时代码，没睡觉，这也算是一种经历上的收货吧。<br>再说说遗憾，可能就是后期为了赶工熬夜写代码，最终导致部分代码的实现比较草率，还有一些考虑的点没有写，毕竟刚开始看到这个需求的时候我满脑子都是一个问题，如果玩这个游戏的人退出了游戏，那下次他再进来的时候如何继续之前的进度。<br>还有一点遗憾可能就是这篇文章文字占比太大了，很难读，或者没有读过我的代码很难在文章上有所收获。<br>最后记录一下被我揉烂的四张需求的纸吧，还是挺值得纪念的。<br><img src="/images/xuqiu1.jpeg" alt="架构图"><br><img src="/images/xuqiu2.jpeg" alt="架构图"><br><img src="/images/xuqiu3.jpeg" alt="架构图"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>先说说成长吧，自打学前端以来，很少写纯原生JavaScript的项目，没有设计过这样的程序，所以在实现的过程中发现了很多可以精进的地方，在上面有提到过。还有很短的时间（4天）完成一个项目，中间还连续写了将近40个小时代码，没睡觉，这也算是一种经历上的收获吧。<br>再说说遗憾，可能就是后期为了赶工熬夜写代码，最终导致部分代码的实现比较草率，还有一些考虑的点没有写，毕竟刚开始看到这个需求的时候我满脑子都是一个问题，如果玩这个游戏的人退出了游戏，那下次他再进来的时候如何继续之前的进度。<br>还有一点遗憾可能就是这篇文章文字占比太大了，很难读，或者没有读过我的代码很难在文章上有所收获。<br>最后记录一下被我揉烂的四张需求的纸吧，还是挺值得纪念的。<br><img src="/images/xuqiu1.jpeg" alt="架构图"><br><img src="/images/xuqiu2.jpeg" alt="架构图"><br><img src="/images/xuqiu3.jpeg" alt="架构图"></p>
 ]]></content>
       <tags>
         <tag>JavaScript</tag>
