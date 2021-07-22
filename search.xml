@@ -87,21 +87,6 @@
       </tags>
   </entry>
   <entry>
-    <title>截止2021年5月的HTML总结</title>
-    <url>/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>截止到2021年5月的html的知识脑图。包含了所有标签属性和草案语法，废弃的语法不再记录。其中标签的分类按照我自己的记忆习惯分的。</p>
-<span id="more"></span>
-<p><em>图片为svg格式，可以在浏览器新标签页打开图片确保能看清图片。</em><br><img src="/images/htmlzongjie.svg" alt="html脑图"></p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>DOCTYPE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript格式化时间的工具函数</title>
     <url>/2021/06/23/JavaScript%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4%E7%9A%84%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>每次新建项目都得去百度偷一个处理时间的函数，不如下次从自己博客里偷。</p>
@@ -180,6 +165,21 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>工具函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>截止2021年5月的HTML总结</title>
+    <url>/2021/05/15/%E6%88%AA%E6%AD%A22021%E5%B9%B45%E6%9C%88%E7%9A%84HTML%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>截止到2021年5月的html的知识脑图。包含了所有标签属性和草案语法，废弃的语法不再记录。其中标签的分类按照我自己的记忆习惯分的。</p>
+<span id="more"></span>
+<p><em>图片为svg格式，可以在浏览器新标签页打开图片确保能看清图片。</em><br><img src="/images/htmlzongjie.svg" alt="html脑图"></p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>DOCTYPE</tag>
       </tags>
   </entry>
   <entry>
@@ -279,7 +279,7 @@
 </ul>
 <h3 id="技术相关"><a href="#技术相关" class="headerlink" title="技术相关"></a>技术相关</h3><h4 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h4><h5 id="flex-rem布局"><a href="#flex-rem布局" class="headerlink" title="flex+rem布局"></a>flex+rem布局</h5><p>flex+rem是移动端比较常用的布局方案了,写起来比较方便，对于手机端兼容也比较好。<br>其中为了使用rem布局，引入了flexible.js处理不同手机下跟元素字体大小的问题，而rem单位的计算借助于vscode的cssrem插件。具体的细节可以在网上搜搜相关的文章，有很多。</p>
 <h5 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h5><p>写个游戏你如果不抽象几个类，那就挺抽象的。<br>这里提一点就是，这个项目采用了组合类的办法来维护类之间的通信。<br>类似下面代码这样。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span>() </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.boss = <span class="keyword">new</span> BOSS(<span class="built_in">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BOSS</span>() </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">app</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.app = app;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">doSomething</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">new</span> Cook(<span class="built_in">this</span>.app);</span><br><span class="line">    <span class="keyword">new</span> Customer(<span class="built_in">this</span>.app);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cook</span>() </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">app</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.app = app;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Customer</span>() </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">app</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.app = app;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.boss = <span class="keyword">new</span> BOSS(<span class="built_in">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BOSS</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">app</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.app = app;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">doSomething</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">new</span> Cook(<span class="built_in">this</span>.app);</span><br><span class="line">    <span class="keyword">new</span> Customer(<span class="built_in">this</span>.app);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cook</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">app</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.app = app;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">app</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.app = app;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这就保证所有的类里面都能获取到BOSS和App的实例，来实现类之间的通信。</p>
 <h5 id="定时器选择"><a href="#定时器选择" class="headerlink" title="定时器选择"></a>定时器选择</h5><p>先说明这里是通过<strong>requestAnimationFrame</strong>实现的定时装置。<br>可能提到定时器的选择，很多人会选择<strong>setTimeout</strong>或<strong>setInterval</strong>,但是我们知道，这两个api并不是在你预期的时间执行代码（如果主线程任务被占用的情况下），所以很难去设定这个间隔的值，所以我们这里使用<strong>requestAnimationFrame</strong>不断的轮询来实现定时器，虽然<strong>requestAnimationFrame</strong>多用于动画。</p>
 <h4 id="逻辑实现"><a href="#逻辑实现" class="headerlink" title="逻辑实现"></a>逻辑实现</h4><p>具体的逻辑实现，看代码就好了。而切每个类中的方法处理我觉得也不是很优雅。<br>需要注意的是，在每个类中都实现了<strong>bindDOM</strong>和<strong>bindEvents</strong>方法，用来获取DOM节点，和绑定事件，统一处理的目的是为了解偶。<br>有些小伙伴可能已经发现了还有一些类中有<strong>bindDec</strong>方法，这个方法用来设置装饰器。其实很多地方都不应该用装饰器模式解决问题，而最好用发布订阅，比如厨师做完菜之后，会有很多人关注这个菜的的状态，我觉得理想的设计就是这些人订阅这个菜的状态，这就是这个项目中数据流设计不好的地方，也是我觉得不优雅的主要原因。</p>
