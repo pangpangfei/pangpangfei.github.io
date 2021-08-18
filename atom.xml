@@ -6,7 +6,7 @@
   <link href="https://pangpangfei.github.io/atom.xml" rel="self"/>
   
   <link href="https://pangpangfei.github.io/"/>
-  <updated>2021-07-22T07:58:21.425Z</updated>
+  <updated>2021-08-18T14:00:32.130Z</updated>
   <id>https://pangpangfei.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>百度前端训练营2021精品班大作业</title>
+    <link href="https://pangpangfei.github.io/2021/08/18/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E8%AE%AD%E7%BB%83%E8%90%A52021%E7%B2%BE%E5%93%81%E7%8F%AD%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
+    <id>https://pangpangfei.github.io/2021/08/18/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E8%AE%AD%E7%BB%83%E8%90%A52021%E7%B2%BE%E5%93%81%E7%8F%AD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</id>
+    <published>2021-08-18T13:39:17.000Z</published>
+    <updated>2021-08-18T14:00:32.130Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过<a href="https://pangpangfei.github.io/2021/07/21/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E8%AE%AD%E7%BB%83%E8%90%A52021%E5%A4%A7%E4%BD%9C%E4%B8%9A/">上篇文章的大作业</a>顺利进入了百度技术培训中心与百度智能小程序研发部的精品班，这篇文章是精品班大作业的分享。</p><span id="more"></span><h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://gitee.com/Web_MOOC_group2/web-mooc_planet">click here</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;通过&lt;a href=&quot;https://pangpangfei.github.io/2021/07/21/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E8%AE%AD%E7%BB%83%E8%90%A52021%E5%A4%A7%E4%BD%9C%E4%B8%9A/&quot;&gt;上篇文章的大作业&lt;/a&gt;顺利进入了百度技术培训中心与百度智能小程序研发部的精品班，这篇文章是精品班大作业的分享。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="https://pangpangfei.github.io/tags/JavaScript/"/>
+    
+    <category term="HTML" scheme="https://pangpangfei.github.io/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://pangpangfei.github.io/tags/CSS/"/>
+    
+    <category term="作业" scheme="https://pangpangfei.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+    <category term="three" scheme="https://pangpangfei.github.io/tags/three/"/>
+    
+  </entry>
   
   <entry>
     <title>百度前端训练营2021大作业</title>
