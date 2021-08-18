@@ -27,8 +27,8 @@ ES6之前的JavaScript不支持类的概念，但是可以通过new关键字将�
         return '你好！我叫' + this.name;
     }
 
-    var lxw = new Person("刘希玮", 24, 0);
-    var yxm = new Person("岳向淼", 25, 1);
+    var lxw = new Person('刘希玮', 24, 0);
+    var yxm = new Person('岳向淼', 25, 1);
 
     console.log(lxw.greeting());
     console.log(yxm.greeting());
@@ -48,8 +48,8 @@ ES6 支持了类的定义。
         }
     }
 
-    const lxw = new Person("刘希玮", 24, 0);
-    const yxm = new Person("岳向淼", 25, 1);
+    const lxw = new Person('刘希玮', 24, 0);
+    const yxm = new Person('岳向淼', 25, 1);
 
     console.log(lxw.greeting());
     console.log(yxm.greeting());
