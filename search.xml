@@ -136,7 +136,7 @@
 <li>fmt<ul>
 <li>格式化的规则</li>
 <li>类型：String</li>
-<li>默认值：yyyy-MM-dd HH:mm:ss<h3 id="fmt不考虑的情况"><a href="#fmt不考虑的情况" class="headerlink" title="fmt不考虑的情况"></a>fmt不考虑的情况</h3>间隔内容如前一个字母相同<br>如：</li>
+<li>默认值：yyyy-MM-dd HH:mm:ss<h3 id="fmt不考虑的情况"><a href="#fmt不考虑的情况" class="headerlink" title="fmt不考虑的情况"></a>fmt不考虑的情况</h3>间隔内容与前一个字母相同<br>如：</li>
 </ul>
 </li>
 </ul>
